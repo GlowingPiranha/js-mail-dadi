@@ -40,4 +40,18 @@ const randomUserNumbers = []
 for (let i = 0; i < 1; i++) {
   const pcNumber = Math.floor(Math.random() * 6) + 1;
   const userNumber = Math.floor(Math.random() * 6) + 1;
+
+  console.log(pcNumber)
+  console.log(userNumber)
+
+  randomPcNumbers.push(pcNumber);
+  randomUserNumbers.push(userNumber);
+
+  if (pcNumber > userNumber) {
+    pcPoints++;
+  } else if (pcNumber < userNumber) {
+    userPoints++;
+  }
 }
+
+// controllo il punteggio 
