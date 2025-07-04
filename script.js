@@ -46,22 +46,23 @@ for (let i = 0; i < 1; i++) {
 
   randomPcNumbers.push(pcNumber);
   randomUserNumbers.push(userNumber);
+  let pcPoints = 0;
+  let userPoints = 0;
+  if (pcNumber > userNumber) {
+    pcPoints++;
+  } else if (pcNumber < userNumber) {
+    userPoints++;
+  }
 
-}
-if (pcNumber > userNumber) {
-  pcPoints++;
-} else if (pcNumber < userNumber) {
-  userPoints++;
-}
+  // controllo il punteggio 
 
-// controllo il punteggio 
+  if (pcPoints > userPoints) {
+    console.log(`il PC ha fatto: ${randomPcNumbers}. il Giocatore ha fatto: ${randomUserNumbers}. ha vinto il PC`);
 
-if (pcPoints > userpoints) {
-  console.log(`il PC ha fatto: ${randomPcNumbers}. il Giocatore ha fatto: ${randomUserNumbers}. ha vinto il PC `);
+  } else if (pcPoints < userPoints) {
+    console.log(`il PC ha fatto: ${randomPcNumbers}. il Giocatore ha fatto: ${randomUserNumbers}. ha vinto il Giocatore`);
 
-} else if (pcPoints < userPoints) {
-  console.log(`il PC ha fatto: ${randomPcNumbers}. il Giocatore ha fatto: ${randomUserNumbers}. ha vinto il PC `);
-
-} else {
-  console.log(`il PC ha fatto: ${randomPcNumbers}. il Giocatore ha fatto: ${randomUserNumbers}. è un pareggio`)
+  } else {
+    console.log(`il PC ha fatto: ${randomPcNumbers}. il Giocatore ha fatto: ${randomUserNumbers}. è un pareggio`)
+  }
 }
