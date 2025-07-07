@@ -56,12 +56,12 @@ const userNumber = Math.floor(Math.random() * 6) + 1;
 
 // controllo il punteggio 
 
-if (pcPoints > userPoints) {
-  console.log(`il PC ha fatto: ${PcNumbers}. il Giocatore ha fatto: ${UserNumbers}. ha vinto il PC`);
+if (pcNumber > userNumber) {
+  console.log(`il PC ha fatto: ${pcNumber}. il Giocatore ha fatto: ${userNumber}. ha vinto il PC`);
 
-} else if (pcPoints < userPoints) {
-  console.log(`il PC ha fatto: ${PcNumbers}. il Giocatore ha fatto: ${UserNumbers}. ha vinto il Giocatore`);
+} else if (pcNumber < userNumber) {
+  console.log(`il PC ha fatto: ${pcNumber}. il Giocatore ha fatto: ${userNumber}. ha vinto il Giocatore`);
 
 } else {
-  console.log(`il PC ha fatto: ${PcNumbers}. il Giocatore ha fatto: ${UserNumbers}. è un pareggio`)
+  console.log(`il PC ha fatto: ${pcNumber}. il Giocatore ha fatto: ${userNumber}. è un pareggio`)
 }
