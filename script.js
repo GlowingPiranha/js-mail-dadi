@@ -34,35 +34,34 @@ if (found) {
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
-const randomPcNumbers = []
-const randomUserNumbers = []
+// const randomPcNumbers = []
+// const randomUserNumbers = []
 
-for (let i = 0; i < 1; i++) {
-  const pcNumber = Math.floor(Math.random() * 6) + 1;
-  const userNumber = Math.floor(Math.random() * 6) + 1;
+// for (let i = 0; i < 1; i++) {
+const pcNumber = Math.floor(Math.random() * 6) + 1;
+const userNumber = Math.floor(Math.random() * 6) + 1;
 
-  console.log(pcNumber)
-  console.log(userNumber)
+// console.log(pcNumber)
+// console.log(userNumber)
 
-  randomPcNumbers.push(pcNumber);
-  randomUserNumbers.push(userNumber);
-  let pcPoints = 0;
-  let userPoints = 0;
-  if (pcNumber > userNumber) {
-    pcPoints++;
-  } else if (pcNumber < userNumber) {
-    userPoints++;
-  }
+// randomPcNumbers.push(pcNumber);
+// randomUserNumbers.push(userNumber);
+// let pcPoints = 0;
+// let userPoints = 0;
+// if (pcNumber > userNumber) {
+//   pcPoints++;
+// } else if (pcNumber < userNumber) {
+//   userPoints++;
+// }
 
-  // controllo il punteggio 
+// controllo il punteggio 
 
-  if (pcPoints > userPoints) {
-    console.log(`il PC ha fatto: ${randomPcNumbers}. il Giocatore ha fatto: ${randomUserNumbers}. ha vinto il PC`);
+if (pcPoints > userPoints) {
+  console.log(`il PC ha fatto: ${PcNumbers}. il Giocatore ha fatto: ${UserNumbers}. ha vinto il PC`);
 
-  } else if (pcPoints < userPoints) {
-    console.log(`il PC ha fatto: ${randomPcNumbers}. il Giocatore ha fatto: ${randomUserNumbers}. ha vinto il Giocatore`);
+} else if (pcPoints < userPoints) {
+  console.log(`il PC ha fatto: ${PcNumbers}. il Giocatore ha fatto: ${UserNumbers}. ha vinto il Giocatore`);
 
-  } else {
-    console.log(`il PC ha fatto: ${randomPcNumbers}. il Giocatore ha fatto: ${randomUserNumbers}. è un pareggio`)
-  }
+} else {
+  console.log(`il PC ha fatto: ${PcNumbers}. il Giocatore ha fatto: ${UserNumbers}. è un pareggio`)
 }
